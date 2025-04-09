@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Subway Dash Pro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white flex flex-col items-center justify-center min-h-screen">
+  <audio id="bg-music" src="music.mp3" loop></audio>
+
+  <h1 class="text-3xl font-bold text-cyan-400 mb-4">🚇game</h1>
+
+  
+
+  <!-- Score & Coins -->
+  <div class="flex gap-4 text-yellow-300 mb-2">
+    <p id="score">Score: 0</p>
+    <p id="coins">Coins: 0</p>
+  </div>
+
+  <!-- Game Area -->
+  <div id="game" class="relative w-[300px] h-[500px] bg-gradient-to-b from-gray-800 via-gray-900 to-black rounded-md overflow-hidden shadow-lg">
+    <div id="player" class="absolute bottom-4 left-[120px] w-[60px] h-[60px] bg-cyan-400 rounded-full transition-all duration-150"></div>
+  </div>
+
+  <!-- Mobile Controls -->
+  <div class="flex justify-center gap-6 mt-4 md:hidden">
+    <button id="leftBtn" class="bg-cyan-500 px-6 py-2 rounded shadow">←</button>
+    <button id="rightBtn" class="bg-cyan-500 px-6 py-2 rounded shadow">→</button>
+  </div>
+
+  <script src="1.js"></script>
+</body>
+</html>
